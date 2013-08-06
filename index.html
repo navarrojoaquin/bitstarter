@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
@@ -15,43 +15,43 @@
     <style type="text/css">
 
       /* Large desktop */
-      @media (min-width: 980px) {
+      @media (min-width: 980px) { 
         body {
-          padding-top: 60px;
+         padding-top: 60px;
         }
-        .linediv-l {
-          border-right: 1px white solid;
+       .linediv-l {
+         border-right: 1px white solid;
         }
-        .linediv-r {
-          border-left: 1px white solid;
-        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
       }
 
       /* Landscape phones and down */
-      @media (max-width: 480px) {
-        .copy {
-          padding: 2.5% 10%;
-        }
-        .linediv-l {
-          border-bottom: 1px white solid;
-        }
-        .linediv-r {
-          border-top: 1px white solid;
-        }
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
       }
 
       /* All form factors */
 
       /* Main body and headings */
-      body {
+      body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-        font-family: 'Ubuntu', Helvetiva, Arial, sans-serif;
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
       p.lead {
-        padding-top: 15px;
+        padding-top: 1.5%;
         font-size: 24px;
         line-height: 30px;
       }
@@ -101,7 +101,7 @@
   </head>
   <body>
 
-    <!-- Mobile-friendly navbar adapted from example: -->
+    <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -135,64 +135,73 @@
         <div class="span12">
           <h1>Quick Prototype</h1>
         </div>
-      </div>
+      </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-          <!-- Spacial typography form Bootstrap for lead paragraph. -->
+          <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">3D printing on demand</p>
+          <p class="lead">3D printing on demand.</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                  <h3>0</h3> <p>backers</p>
+                <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$0,00</h3> <p>of $10,000</p>
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                  <h3>30</h3> <p>days left</p>
+                <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 0%;"></div>
-              <div class="bar bar-warning" style="width: 100%;"></div>
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
+
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
@@ -200,17 +209,17 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
-            Additive manufacturing or 3D printing is a process of making a 
-            three-dimensional solid object of virtually any shape from 
-            a digital model. 
-            3D printing is achieved using an additive process, where 
-            successive layers of material are laid down in different shapes. 
-            3D printing is considered distinct from traditional machining 
-            techniques, which mostly rely on the removal of material by 
+            Additive manufacturing or 3D printing is a process of making a
+            three-dimensional solid object of virtually any shape from
+            a digital model.
+            3D printing is achieved using an additive process, where
+            successive layers of material are laid down in different shapes.
+            3D printing is considered distinct from traditional machining
+            techniques, which mostly rely on the removal of material by
             methods such as cutting or drilling (subtractive processes).
           </p>
         </div>
@@ -222,54 +231,54 @@
             This project aims to create a web platform where you can upload
             your 3D models, we print them and ship them to your home in two days!.
             Quick prototype is a 3D-printing-on-demand service that allows you
-            to design and create cool real 3D models without investing in an 
+            to design and create cool real 3D models without investing in an
             expensive 3D printer.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
         </div>
       </div>
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- THis brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
-        <div class="span10 offset1">
-          <h3>FAQ</h3>
-          <div class="accordion" id="accordion2">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse"
-                   data-parent="#accordion2" href="#collapseOne">
-                   What does FAQ stand for?
-                </a>
-              </div>
-              <div id="collapseOne" class="accordion-body collapse">
-                <div class="accordion-inner">
-                   Frequently Asked Question.
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
+                    What does FAQ stand for?
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Frequently Asked Question.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accrdion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse"
-                   data-parent="#accordion2" href="#collapseTwo">
-                   What's a Frequently Asked Question?
-                </a>
-              </div>
-              <div id="collapseTwo" class="accordion-body collapse">
-                <div class="accordion-inner">
-                   A question which is commonly asked by users.
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    What's a Frequently Asked Question?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    A question which is commonly asked by users.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
       </div>
 
-      <!-- We put this under a CC By-SA 3.0 lincese. -->
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
